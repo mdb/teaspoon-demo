@@ -36,3 +36,4 @@ gem 'spring',        group: :development
 
 gem 'rails-assets-underscore'
 gem 'rails-assets-backbone'
+gem 'teaspoon', '0.8.0'
