@@ -157,18 +157,18 @@ Teaspoon.configure do |config|
   # - with the cli: teaspoon --coverage=[coverage_name]
 
   # Specify that you always want a coverage configuration to be used.
-  #config.use_coverage = nil
+  config.use_coverage = 'default'
 
   config.coverage do |coverage|
 
     # Which coverage reports Instanbul should generate. Correlates directly to what Istanbul supports.
     #
     # Available: text-summary, text, html, lcov, lcovonly, cobertura, teamcity
-    #coverage.reports = ["text-summary", "html"]
+    coverage.reports = ["text-summary", "html"]
 
     # The path that the coverage should be written to - when there's an artifact to write to disk.
     # Note: Relative to `config.root`.
-    #coverage.output_dir = "coverage"
+    coverage.output_path = "coverage/javascript"
 
     # Various thresholds requirements can be defined, and those thresholds will be checked at the end of a run. If any
     # aren't met the run will fail with a message. Thresholds can be defined as a percentage (0-100), or nil.
